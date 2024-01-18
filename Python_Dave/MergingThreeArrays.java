@@ -15,15 +15,14 @@ int[] myFouthNumber = new int[myFirstNumber.length + mySecondNumber.length + myT
 
 for(int i = 0; i < myFirstNumber.length; i++){
 	myFouthNumber[i] = myFirstNumber[i];
-
 }
 
-for(int j = 0; j < mySecondNumber.length; j++ ){
-	myFouthNumber[j + mySecondNumber.length] = mySecondNumber[j];
+for(int i = 0; i < mySecondNumber.length; i++ ){
+	myFouthNumber[myFirstNumber.length +mySecondNumber.length + i ] = mySecondNumber[i];
 }
 
-for(int k = 0; k < myThirdNumber.length; k++){
-	myFouthNumber[k + myThirdNumber.length] = myThirdNumber[k]; 
+for(int i = 0; i < myThirdNumber.length; i++){
+	myFouthNumber[myFirstNumber.length + mySecondNumber.length + myThirdNumber + i ]  = myThirdNumber[i]; 
 }
 
 System.out.println(Arrays.toString(myFouthNumber));
