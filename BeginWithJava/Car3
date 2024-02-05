@@ -1,0 +1,21 @@
+public class Car3{
+
+public static void main(String[] args{
+
+myFunction(a, b);
+
+System.out.println(myFunction());
+
+
+
+}
+
+public int myFunction(int a, int b){
+
+a = 8;
+b = 6;
+
+return Math.max(a, b);
+
+}
+}
